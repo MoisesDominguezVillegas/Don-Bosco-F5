@@ -1,13 +1,15 @@
 # Recursos
 
 ## HTML
-Tablas: https://www.w3schools.com/html/html_tables.asp
-Formularios: https://www.w3schools.com/html/html_forms.asp
+* Learn HTML: https://www.w3schools.com/html/default.asp
+* Tablas: https://www.w3schools.com/html/html_tables.asp
+* Formularios: https://www.w3schools.com/html/html_forms.asp
 
 ## CSS
-https://www.w3schools.com/css/default.asp
-Plantillas: https://www.w3schools.com/css/css_templates.asp
+* Learn CSS: https://www.w3schools.com/css/default.asp
+* Plantillas: https://www.w3schools.com/css/css_templates.asp
 
+## Tutoriales
 * Como crear una LANDING PAGE con FIGMA [HTML y CSS]
   https://www.youtube.com/watch?v=cFV2F_XWZ_o&ab_channel=AlexCGDesign
 
