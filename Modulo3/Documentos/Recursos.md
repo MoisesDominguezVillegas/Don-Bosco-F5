@@ -25,5 +25,6 @@
 * Build A Responsive Website With HTML & CSS Tutorial
   https://www.youtube.com/watch?v=ZeDP-rzOnAA&ab_channel=DevEd
   
-## Mockups
-* HTML Templates: https://nicepage.com/html-templates
+## Mockups - HTML Templates: 
+* https://nicepage.com/html-templates
+* https://elements.envato.com/es/web-templates/site-templates
