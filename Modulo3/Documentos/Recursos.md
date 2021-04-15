@@ -28,3 +28,8 @@
 ## Mockups - HTML Templates: 
 * https://nicepage.com/html-templates
 * https://elements.envato.com/es/web-templates/site-templates
+
+## Metodologia Agile:
+* https://www.atlassian.com/es/agile/manifesto
+* https://www.atlassian.com/es/agile/kanban
+* https://youtu.be/sLexw-z13Fo?t=18
