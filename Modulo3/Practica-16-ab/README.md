@@ -1,4 +1,4 @@
-#Práctica: Crear un codePen con lo seguiente: 
+# Práctica: Crear un codePen con lo seguiente: 
 1. -Crea la structura HTML 
 1. -Conectar css de forma externa, comentar la linea para no generar errores.
 1. -Añadir un estilo color a un elemento h1 utilizando css de forma interna 
