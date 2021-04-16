@@ -15,6 +15,9 @@
 * Learn CSS: https://www.w3schools.com/css/default.asp
 * Plantillas: https://www.w3schools.com/css/css_templates.asp
 
+## Flex
+* https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
 ## Tutoriales
 * Como crear una LANDING PAGE con FIGMA [HTML y CSS]
   https://www.youtube.com/watch?v=cFV2F_XWZ_o&ab_channel=AlexCGDesign
