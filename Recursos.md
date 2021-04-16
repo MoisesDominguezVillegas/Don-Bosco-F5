@@ -19,9 +19,12 @@
 * https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 ## Tutoriales
+* Como crear un login 
+  https://www.w3schools.com/howto/howto_css_login_form.asp
+  
 * Como crear una LANDING PAGE con FIGMA [HTML y CSS]
   https://www.youtube.com/watch?v=cFV2F_XWZ_o&ab_channel=AlexCGDesign
-
+  
 * Como crear una pagina web en html y css
   https://www.youtube.com/watch?v=nKi5J7cDugg&ab_channel=NavisCode
 
@@ -43,3 +46,9 @@
 * https://www.atlassian.com/es/agile/manifesto
 * https://www.atlassian.com/es/agile/kanban
 * https://youtu.be/sLexw-z13Fo?t=18
+
+## Prácticas
+* Flex: https://codepen.io/aberkanimed/pen/gOgKdaq?editors=1100
+
+## Otros
+* Píldoras informáticas: https://www.youtube.com/c/pildorasinformaticas/featured
