@@ -1,5 +1,11 @@
 # Recursos
 
+## Atomic Design
+* https://docs.google.com/presentation/d/1T2xbMc8z8Yy6CSX5G7dBKntGYs2veKZcRBZXLmXwWiU/edit?usp=sharing
+
+## Introducción HTML, CSS
+* https://docs.google.com/presentation/d/1X_mqawjFQju1efkOxP7ewqmobxE1qi2cIxWhTRC84h4/edit#slide=id.p
+
 ## HTML
 * Learn HTML: https://www.w3schools.com/html/default.asp
 * Tablas: https://www.w3schools.com/html/html_tables.asp
@@ -30,6 +36,7 @@
 * https://elements.envato.com/es/web-templates/site-templates
 
 ## Metodologia Agile:
+* Presentación: https://docs.google.com/presentation/d/1zvuzM5Gns2GWcPbv4q54Vo_YvG2yU7_BNO3VdwS1qZY/edit?usp=sharing
 * https://www.atlassian.com/es/agile/manifesto
 * https://www.atlassian.com/es/agile/kanban
 * https://youtu.be/sLexw-z13Fo?t=18
