@@ -4,5 +4,5 @@
 
 
 Realizado por:
-* Daniel Rodriguez Garcia
+* Daniel Rodríguez García
 * Mohamed Aberkani
