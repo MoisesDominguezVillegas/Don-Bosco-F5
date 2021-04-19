@@ -17,10 +17,23 @@ fieldset {
     box-sizing: border-box;
 }
 
+input:empty {
+    box-shadow: 0 0 5px 1px #ff7300be;
+}
+
 input:invalid {
     box-shadow: 0 0 5px 1px red;
 }
 
 input:focus:invalid {
     box-shadow: none;
+}
+
+input:read-only {
+    cursor: default;
+    border-color: rgba(118, 118, 118, 0.3);
+}
+
+input:hover {
+    background-color: #F89B4D;
 }
