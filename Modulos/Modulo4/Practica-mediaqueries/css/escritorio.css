@@ -1,0 +1,34 @@
+.cabecero-contenedor,
+.principal aside {
+    box-shadow: 0 5px 10px #aaa;
+}
+
+.titulo {
+    float: left;
+}
+
+nav {
+    float: right;
+    width: 38%;
+}
+
+.principal article {
+    float: left;
+    width: 57%;
+}
+
+.principal aside {
+    float: right;
+    width: 28%;
+    padding: 0px 5% 1px;
+}
+
+
+/* Ancho máximo */
+
+@media only screen and (min-width:1140px) {
+    .contenedor {
+        width: 1026px;
+        margin: 0 auto;
+    }
+}
