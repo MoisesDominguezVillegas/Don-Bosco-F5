@@ -80,3 +80,33 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+## Uso
+
+Una vez levantado el servicio, como buena API rest, la prueba será mediante cURL. 
+Todos los métodos salvo la raíz y el login están protegidos, para acceder a ellos tienes que tener un token JWT válido.
+
+
+
+
+
+```
+$ # POST to /auth/login
+$ curl -X POST http://localhost:3000/auth/login -d '{"username": "john", "password": "changeme"}' -H "Content-Type: application/json"
+$ # result -> {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."}
+$ # Note: above JWT truncated
+```
+
+```
+$ # GET /profile
+$ curl http://localhost:3000/profile
+$ # result -> {"statusCode":401,"error":"Unauthorized"}
+
+$ # POST /auth/login
+$ curl -X POST http://localhost:3000/auth/login -d '{"username": "john", "password": "changeme"}' -H "Content-Type: application/json"
+$ # result -> {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2Vybm... }
+
+$ # GET /profile using access_token returned from previous step as bearer code
+$ curl http://localhost:3000/profile -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2Vybm..."
+$ # result -> {"userId":1,"username":"john"}
+```
