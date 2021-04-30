@@ -45,6 +45,15 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+HAY QUE CREAR UN FICHERO EN "SRC/AUTH/CONSTANT.TS" CON ESTA ESTRUCTURA:
+
+```typescript
+export const jwtConstants = {
+   secret: 'secretKey',
+};
+```
+
+
 ## Test
 
 ```bash

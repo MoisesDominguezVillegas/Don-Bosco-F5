@@ -2,9 +2,7 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { Evento } from './eventos/entity/evento.entity';
-import { EventosController } from './eventos/eventos.controller';
-import { EventosService } from './eventos/eventos.service';
+
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 
@@ -21,11 +19,10 @@ import { UsersModule } from './users/users.module';
                 ],
       synchronize: true,
     }),
-    TypeOrmModule.forFeature([Evento]),
     AuthModule,
     UsersModule
   ],
-  controllers: [AppController, EventosController],
-  providers: [AppService, EventosService],
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule {}
