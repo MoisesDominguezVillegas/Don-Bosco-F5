@@ -7,6 +7,7 @@ import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
 import { JwtAuthGuard } from './auth/jwt-auth.guard';
 import { UsersModule } from './users/users.module';
+import { EventsModule } from './events/events.module';
 
 @Module({
   imports: [
@@ -22,7 +23,8 @@ import { UsersModule } from './users/users.module';
       synchronize: true,
     }),
     AuthModule,
-    UsersModule
+    UsersModule,
+    EventsModule
   ],
   controllers: [AppController],
   providers: [
