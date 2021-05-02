@@ -1,20 +1,25 @@
 import { Injectable } from '@nestjs/common';
+import { User } from './entities/user.entity';
 
-// This should be a real class/interface representing a user entity
-export type User = any;
 
 @Injectable()
 export class UsersService {
   private readonly users = [
     {
-      userId: 1,
+      id: 1,
       username: 'john',
       password: 'changeme',
+      email: 'john@example.com',
+      isActive: true,
+      events: []
     },
     {
-      userId: 2,
+      id: 2,
       username: 'maria',
       password: 'guess',
+      email: 'maria@example.com',
+      isActive: true,
+      events: []
     },
   ];
 

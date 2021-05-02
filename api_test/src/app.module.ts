@@ -9,6 +9,8 @@ import { JwtAuthGuard } from './auth/jwt-auth.guard';
 import { UsersModule } from './users/users.module';
 import { EventsModule } from './events/events.module';
 import { ConfigModule } from '@nestjs/config';
+import 'reflect-metadata';
+import 'es6-shim';
 
 
 @Module({
