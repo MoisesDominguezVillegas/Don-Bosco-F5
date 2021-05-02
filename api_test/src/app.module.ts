@@ -9,6 +9,7 @@ import { JwtAuthGuard } from './auth/jwt-auth.guard';
 import { UsersModule } from './users/users.module';
 import { EventsModule } from './events/events.module';
 import { ConfigModule } from '@nestjs/config';
+import { ThrottlerModule } from '@nestjs/throttler';
 import 'reflect-metadata';
 import 'es6-shim';
 
@@ -28,6 +29,10 @@ import 'es6-shim';
                   './eventos/entities/*.entity(.ts,.js)'
                 ],
       synchronize: true,
+    }),
+    ThrottlerModule.forRoot({
+      ttl: 60,
+      limit: 10,
     }),
     AuthModule,
     UsersModule,
