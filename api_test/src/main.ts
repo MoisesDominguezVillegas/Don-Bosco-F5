@@ -8,7 +8,7 @@ async function bootstrap() {
     logger: ['error', 'warn'],
   });
 
-  app.use(compression());
+  //app.use(compression());
 
   app.useGlobalPipes(new ValidationPipe());
   await app.listen(3000);
