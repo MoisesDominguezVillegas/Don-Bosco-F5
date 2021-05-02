@@ -1,5 +1,6 @@
 # modulos de node
 node_modules
+package-lock.json
 
 # compilados
 build
@@ -7,3 +8,4 @@ dist
 
 #archivo con claves jwt
 src/auth/constant.ts
+.env

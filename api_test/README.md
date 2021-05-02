@@ -45,7 +45,10 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-HAY QUE CREAR UN FICHERO EN "SRC/AUTH/CONSTANT.TS" CON ESTA ESTRUCTURA:
+## Fichero .env
+Crear un archivo llamado .env tomando como ejemplo el de .exampleenv e incluir en el los datos de configuración.
+
+## HAY QUE CREAR UN FICHERO EN "SRC/AUTH/CONSTANT.TS" CON ESTA ESTRUCTURA:
 
 ```typescript
 export const jwtConstants = {
@@ -85,7 +88,6 @@ Nest is [MIT licensed](LICENSE).
 
 Una vez levantado el servicio, como buena API rest, la prueba será mediante cURL. 
 Todos los métodos salvo la raíz y el login están protegidos, para acceder a ellos tienes que tener un token JWT válido.
-
 
 
 
