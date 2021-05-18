@@ -7,6 +7,7 @@ const render = () => {
     //       return '<li>' + t + '</li>';
     //   });
     todoList.innerHTML = todosTemplate.join('');
+
     const elementos = document.querySelectorAll('#todo-list li');
     elementos.forEach((elemento, i) => {
         elemento.addEventListener('click', () => {
