@@ -1,0 +1,14 @@
+body {
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+#contador {
+    font-size: 20px;
+}
