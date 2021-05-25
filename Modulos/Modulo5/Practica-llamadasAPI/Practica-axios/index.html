@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AXIOS - Llamadas API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <article>
+            <div id="loginDiv">
+                <form id="form">
+                    <h4>Login</h4>
+                    <input type="email" name="email" id="email" placeholder="Email" /><br/>
+                    <input type="password" name="password" id="password" placeholder="Contraseña" /><br/>
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+        </article>
+        <article>
+            <div id="postDiv">
+                <form id="formPost">
+                    <h4>Formulario evento</h4>
+                    <input type="text" name="name" id="name" placeholder="Nombre del evento" required/><br/>
+                    <input type="text" name="description" id="description" placeholder="Descripción del evento" required/><br/>
+                    <button type="submit">Guardar</button>
+                </form>
+            </div>
+        </article>
+        <article>
+            <div id="getDiv">
+                <button id="json_get">Petición GET</button>
+            </div>
+
+        </article>
+        <article>
+            <div id="listDiv">
+                <div id="mensaje1"></div>
+                <ul id="todo-list"></ul>
+            </div>
+        </article>
+        <article>
+            <div>
+                <div id="mensaje"></div>
+                <div id="loading">cargando...</div>
+            </div>
+        </article>
+    </section>
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="main.js"></script>
+
+</html>

@@ -1,0 +1,57 @@
+#loading,
+#listDiv {
+    display: none;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+}
+
+#loginDiv,
+#postDiv,
+#getDiv {
+    width: 20%;
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    background-color: #e5e5e5;
+    margin-top: 10px;
+}
+
+#listDiv {
+    width: 20%;
+    padding: 2vw;
+    background-color: #e5e5e5;
+    margin-top: 10px;
+}
+
+#form,
+#formPost,
+#getDiv {
+    text-align: center;
+}
+
+#form input,
+#formPost input {
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: white;
+    border: 1px solid black;
+    height: 2.2vh;
+}
+
+#form button,
+#formPost button,
+#json_get {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 4vw;
+    height: 2.2vh;
+}
+
+#json_get {
+    width: 6vw;
+}
