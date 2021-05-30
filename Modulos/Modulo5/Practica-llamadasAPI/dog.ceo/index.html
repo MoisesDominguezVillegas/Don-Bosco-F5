@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Ubuntu+Mono:400" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&amp;family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <article>
+            <div class="vertical-nav">
+                <a class="no-border" href="/dog-api/"><img src="/img/dog-api-logo.svg" class="logo"></a>
+                <h1>Dog API</h1>
+                <ul>
+                    <li><a href="https://dog.ceo/dog-api/documentation">Documentation</a></li>
+                    <li><a href="./breed-list/index.html">Breeds list</a></li>
+                    <li><a href="https://github.com/jigsawpieces/dog-api-images#dog-api-images">Submit your dog</a></li>
+                </ul>
+            </div>
+        </article>
+    </section>
+    <section>
+        <article>
+            <div class="api-side home">
+                <h1 class="title">The internet's biggest collection of <b>open source dog pictures</b>.</h1>
+                <p>Read our <a href="/dog-api/documentation">documentation</a> to find out more or try it out for yourself below.</p>
+                <p>Want to add your dog to the collection? Submit your photos as a <a href="https://github.com/jigsawpieces/dog-api-images#dog-api-images">pull request here</a>.</p>
+                <p>Need more dog in your life? Get issue 1 of <a href="https://sideorders.co.uk/collections/frontpage/products/dog-ceo-issue-1" target="_blank">Dog CEO Zine</a> - a quarterly business and lifestyle magazine for the modern dog. Featuring an
+                    exclusive interview with Scottie the Monopoly dog. <a href="https://sideorders.co.uk/collections/frontpage/products/dog-ceo-issue-1" target="_blank">Order your copy</a> from Side Orders Publishing. Ships worldwide.</p>
+
+                <div class="code-wrapper">
+                    <span class="code">https://dog.ceo/api/breeds/image/random</span>
+                    <a id="get-dog" href="javascript:void(0);" class="get-dog button">Fetch!</a>
+                </div>
+
+                <div class="try">
+                    <div class="json">
+                        <h4>JSON</h4>
+                        <pre id="respuesta"></pre>
+                    </div>
+                    <div class="image">
+                        <h4>Image</h4>
+                        <div class="image-content"><img id="imagen" src="https://images.dog.ceo/breeds/schnauzer-giant/n02097130_3277.jpg"></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="main.js"></script>
+
+</html>
