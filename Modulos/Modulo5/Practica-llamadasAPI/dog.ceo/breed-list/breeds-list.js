@@ -16,7 +16,6 @@ btn.addEventListener('click', function() {
 
             //capturamos la etiqueta imagen
             var img = document.getElementById('imagen');
-            //cambiamos el atributo src de la etiqueta img por la nueva url recibida de la llamda a la api
-            img.src = res.data.message;
+
         });
 });

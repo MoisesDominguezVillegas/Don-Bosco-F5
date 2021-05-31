@@ -17,7 +17,7 @@
     <section>
         <article>
             <div class="vertical-nav">
-                <a class="no-border" href="/dog-api/"><img src="/img/dog-api-logo.svg" class="logo"></a>
+                <a class="no-border" href="/dog-api/"><img src="./img/dog-api-logo.svg" class="logo"></a>
                 <h1>Dog API</h1>
                 <ul>
                     <li><a href="https://dog.ceo/dog-api/documentation">Documentation</a></li>
@@ -38,13 +38,18 @@
 
                 <div class="code-wrapper">
                     <span class="code">https://dog.ceo/api/breeds/image/random</span>
-                    <a id="get-dog" href="javascript:void(0);" class="get-dog button">Fetch!</a>
+                    <a id="get-dog" href="javascript:void(0);" class="get-dog button">¡Buscar!</a>
                 </div>
 
                 <div class="try">
                     <div class="json">
                         <h4>JSON</h4>
-                        <pre id="respuesta"></pre>
+                        <pre id="respuesta">
+{
+    "message": "https://images.dog.ceo/breeds/schnauzer-giant/n02097130_3277.jpg",
+    "status": "success"
+}
+                        </pre>
                     </div>
                     <div class="image">
                         <h4>Image</h4>
