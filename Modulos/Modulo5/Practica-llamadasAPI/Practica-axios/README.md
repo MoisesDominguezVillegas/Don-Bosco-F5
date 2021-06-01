@@ -20,7 +20,8 @@ Al cargar la libreria axios en el navegador tenemos acceso al objeto "axios". En
       }
 })
 ```
-Cómo es una promesa, se introduce el "then", estructura de código que se ejecuta solo cuando la llamada anterior se haya resuelto con éxito. - Se declara una función que recibe la respuesta de la API para ser procesada. 
+Cómo es una promesa, se introduce el "then", estructura de código que se ejecuta solo cuando la llamada anterior se haya resuelto con éxito. 
+- Se declara una función que recibe la respuesta de la API para ser procesada. 
 - Se hace un "console.log" de "res.data" que es donde se encuentran los datos devueltos por la API, en este caso el token y cuando expira.
 - Si el código de estado es 200, osea se ha procesado correctamente, se insertará en el HTML el mensaje para ser mostrado.
 - El token se guardará en la caché del navegador con el nombre de 'token'.
