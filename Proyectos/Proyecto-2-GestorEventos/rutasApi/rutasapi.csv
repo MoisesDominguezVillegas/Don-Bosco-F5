@@ -1,0 +1,22 @@
+"Nombre";"Método";"URL";"Parámetros entrada";"Salida";"Descripción"
+"USUARIOS";;;;;
+"login";"POST";"/api/v1/users/login";"{email, password}";"{token, expiresIn}";"Devuelve el token de usuario si el registro es correcto."
+"list users";"GET";"/api/v1/users";"-";"{paginas,total,…,data: { lista usuarios }}";"Devuelve un array con el listado de usuarios."
+"get user";"GET";"/api/v1/users/:id";"Id del usuario en la url";"{data: { usuario }}";"Devuelve el usuario con id dado."
+"register";"POST";"/api/v1/users";"{email, password, first_name, last_name, avatar}";"{data: { nuevo usuario }}";"Registra un nuevo usuario en el sistema."
+"update profile";"PATCH";"/api/v1/users/:id";"{first_name?, last_name?, avatar?}";"{data: { usuario modificado }}";"Actualiza el perfil del usuario."
+"delete user";"DELETE";"/api/v1/users";"Id del usuario en la url";"{}";"Elimina el usuario con id dado."
+;;;;;
+"EVENTOS";;;;;
+"list events";"GET";"/api/v1/events";"-";"{paginas,total,…,data: { lista eventos }}";"Devuelve un array con un listado de eventos"
+"get event";"GET";"/api/v1/events/:id";"Id del evento en la url";"{data: { evento }}";"Devuelve el evento con id dado."
+"create event";"POST";"/api/v1/events";"{name, date, description, photo, type, creator}";"{data: { nuevo evento }}";"Inserta un nuevo evento y devuelve el objeto ya registrado"
+"update event";"PATCH";"/api/v1/events";"{name?, date?, description?, photo?, type?}";"{data: { evento modificado }}";"Actualza el evento con id dado."
+"delete event";"DELETE";"/api/v1/events";"Id del evento en la url";"{}";"Elimina el evento con id dado."
+;;;;;
+"PARTICIPACIONES";;;;;
+"get participants by event id";"GET";"/api/v1/participants/event/:id";"Id del evento en la url";"{data: { suscripciones }}";"Devuelve un array con la lista de usuarios participantes del evento dado id."
+"get participants by user id";"GET";"/api/v1/participants/user/:id";"Id del usuario en la url";"{data: { eventos suscritos }}";"Devuelve un array con la lista de eventos en los que participa el usuario."
+"subscribe participant";"POST";"/api/v1/participants";"{event, user, details}";"{data: { participacion }}";"Devuelve la participacion del usuario en el evento."
+"update participant";"PATCH";"/api/v1/participants";"{ details }";"{data: { participacion }}";"Actualiza el mensaje de participación del usuario registrado."
+"delete participant";"DELETE";"/api/v1/participants";"Id de la participación a eliminar";"{}";"Elimina la participación del usuario a un evento."
