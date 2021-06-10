@@ -6,20 +6,15 @@ var btn = document.getElementById('get-dog');
 btn.addEventListener('click', function() {
     // llamamos a la api de dog.ceo para obtener una imagen de un perro al azar
     axios.get('https://dog.ceo/api/breeds/image/random', {
-            /* configuramos la respuesta en un objeto json, recordemos que tiene esta estructura
-                {
-                    "nombre": "Dogo",
-                    "animal": "Perro",
-                    "color": "marrón claro"
-                }
-            */
+            // configuramos la respuesta en un objeto json, recordemos que tiene esta estructura  
             responseType: 'json'
         })
         .then(function(res) {
             //mostramos en consola la respuesta
             console.log(res);
             //mostramos en consola los datos de la respuesta
-            console.log(res.data);
+            console.log(res.data.message);
+
             /* vemos que los datos devueltos vienen en un objeto json como la configuramos anteriormente, por lo que res.data 
             es como si hicieramos declarasemos una variable de tipo json, como la siguiente:
             var data = {
@@ -30,6 +25,7 @@ btn.addEventListener('click', function() {
 
                 luego podríamos hacer un console.log de data.nombre que nos devolveria el nombre del perro, en este caso Dogo.
             */
+
 
             //capturamos la etiqueta imagen
             var img = document.getElementById('imagen');
