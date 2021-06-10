@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+    <style>
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 1vh 10vw;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <article>
+            <h1>Vamos a trabajar con funciones</h1>
+        </article>
+        <article>
+            <h3>Declarando funciones</h3>
+            <p>
+                A menudo necesitamos realizar una acción similar en muchos lugares de JavaScript, cómo mostrar un mensaje, conectar con un servicio, etc. Por ello para no repetir el mismo código (algo contrario a cualquier norma o estandar de programación) se crean las
+                funciones. Que son bloques de código que permiten ser llamadas para evitar tener que repetirlos.
+            </p>
+            <pre>
+function nombreFuncion(params){
+   return params;
+}
+
+nombreFuncion('Hola coder');
+</pre>
+            <p>Esto nos devolvería un resultado tal que:</p>
+            <pre>
+Hola coder
+            </pre>
+        </article>
+        <article>
+            <h3>Funciones Anónimas</h3>
+            <p>A menudo no necesitamos darle un nombre a la función, ya que no va a ser llamada si no que se ejecutará en respuesta a un evento o una acción</p>
+            <pre>
+function (params) {
+   return params;
+}
+            </pre>
+            <p>Estas funciones reciben el nombre de anónimas. A veces se las llama "callbacks" ya que se producen en respuesta a un servicio, cómo la llamada a una API.</p>
+            <p>Cómo la función que controla la carga del JavaScript para hacerla después del HTML.</p>
+            <pre>
+windows.onload = function () {
+   return "Página cargada";
+};
+            </pre>
+            <p>
+                Si escuchásemos el evento 'click' de un botón (por ejemplo) declararemos una función anónima que reaccione a dicho evento
+            </p>
+            <pre>
+btn.addEventListener('click', function() {
+   return "Has pulsado el botón de enviar";
+});
+            </pre>
+        </article>
+        <article>
+            <h3>Expresiones de funciones</h3>
+            <p>Existen varias maneras de declarar una función con nombre, es decir, que no sea anónima. Tenemos la versión normal, conocida como declaración de funciones.</p>
+            <pre>
+function nombreFuncion(params){
+   return params;
+};
+         </pre>
+            <p>
+                La expresión de funciones es un concepto nuevo, ya que la función no es una "estructura mágica del lenguaje" si no un tipo de datos especial. Por lo que podemos guardar una función en una variable. Sería del siguiente modo:
+            </p>
+            <pre>
+let nombreVariable = function(params) {
+   return params;
+};
+nombreVariable('Hola coders');
+            </pre>
+            <p>
+                El resultado visualizado sería este:
+            </p>
+            <pre>
+Hola coders
+            </pre>
+            <p>
+                Las expresiones de funciones deben terminar con un ';'. A diferencia de los bloques 'for', 'if' y 'function f { }' que pueden no llevarlos, ya que están bien definidos desde el inicio hasta el final. Las expresiones de funciones al ser un valor asignado
+                a una variable, debe ser delimitado con un ";".
+            </p>
+        </article>
+    </section>
+</body>
+<script src="main.js"></script>
+
+</html>
