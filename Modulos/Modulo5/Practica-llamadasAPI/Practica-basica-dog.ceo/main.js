@@ -6,7 +6,13 @@ var btn = document.getElementById('get-dog');
 btn.addEventListener('click', function() {
     // llamamos a la api de dog.ceo para obtener una imagen de un perro al azar
     axios.get('https://dog.ceo/api/breeds/image/random', {
-            // configuramos la respuesta en un objeto json, recordemos que tiene esta estructura  
+            /* configuramos la respuesta cómo un objeto json, recordemos que tiene esta estructura
+                {
+                    "nombre": "Dogo",
+                    "animal": "Perro",
+                    "color": "marrón claro"
+                }
+            */
             responseType: 'json'
         })
         .then(function(res) {
