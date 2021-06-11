@@ -5,7 +5,8 @@ window.onload = function() {
         return 'Las funciones expresadas son muy chulas';
     }
 
-    funcionExpresada();
+    console.log("============ RESULTADO FUNCIÓN EXPRESADA ===============")
+    console.log(funcionExpresada());
 
     let funcionCompleja = function(params) {
         if (params) {
@@ -15,19 +16,9 @@ window.onload = function() {
         }
     }
 
-    console.log(funcionCompleja(false));
-    funcionCompleja('codeando en javascript');
+    console.log("====== RESULTADO FUNCIÓN COMPLEJA SIN PARÁMETROS ========")
+    console.log(funcionCompleja());
 
-    let ordenador = 1;
-
-    switch (ordenador) {
-        case 1, 2, 3, 4:
-            console.log('paco');
-            break;
-        case 5, 6, 7:
-            console.log('pepe');
-            break;
-        default:
-            console.log('dani');
-    }
+    console.log("====== RESULTADO FUNCIÓN COMPLEJA CON PARÁMETROS ========")
+    console.log(funcionCompleja('codeando en javascript'));
 }
