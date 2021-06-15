@@ -1,0 +1,42 @@
+body {
+   margin: 0px;
+}
+article {
+    display: flex;
+    justify-content: center;
+}
+article>header {
+   width: 100vw;
+   padding: 1vw;
+   display: flex;
+   justify-content: center;
+   background-color: #af8d8d;
+   flex-direction: column;
+   align-items: center;
+}
+article>div {
+    width: 20vw;
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    background-color: #e5e5e5;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+article>div#description {
+   width: 40vw;
+}
+article>div>input {
+   width: 80%;
+   border: none;
+}
+article>div>button {
+   width: 50%;
+   background-color: green;
+   color: white;
+   border: none;
+   border-radius: 3px;
+   padding: .3vw;
+   margin-top: 10px;
+}
